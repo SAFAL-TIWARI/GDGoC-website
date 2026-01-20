@@ -59,6 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
     loadTasks();
     updateStats();
 
+    // Set current year in footer
+    const yearElement = document.getElementById('currentYear');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
     // Search and filter functionality
     setupSearch();
     setupFilters();
@@ -84,7 +90,10 @@ function loadMembers(searchTerm = '') {
     }
 
     membersGrid.innerHTML = filteredMembers.map(member => {
-        const initials = member.name.split(' ').map(n => n[0]).join('').toUpperCase();
+        const nameParts = member.name.trim().split(' ').filter(part => part.length > 0);
+        const initials = nameParts.length > 0 
+            ? nameParts.map(n => n[0]).join('').toUpperCase().substring(0, 2)
+            : 'NA';
         const skills = member.skills ? member.skills.split(',').map(s => s.trim()) : [];
         
         return `

@@ -2,6 +2,11 @@
 // This module handles all data storage and retrieval using localStorage
 
 const DataManager = {
+    // Generate unique ID
+    generateId() {
+        return Date.now().toString() + '-' + Math.random().toString(36).substr(2, 9);
+    },
+
     // Initialize data structure if it doesn't exist
     init() {
         if (!localStorage.getItem('gdgoc_data')) {
@@ -34,7 +39,7 @@ const DataManager = {
 
     addMember(member) {
         const data = this.getData();
-        member.id = Date.now().toString();
+        member.id = this.generateId();
         data.members.push(member);
         this.saveData(data);
         return member;
@@ -64,7 +69,7 @@ const DataManager = {
 
     addEvent(event) {
         const data = this.getData();
-        event.id = Date.now().toString();
+        event.id = this.generateId();
         data.events.push(event);
         this.saveData(data);
         return event;
@@ -94,7 +99,7 @@ const DataManager = {
 
     addProject(project) {
         const data = this.getData();
-        project.id = Date.now().toString();
+        project.id = this.generateId();
         data.projects.push(project);
         this.saveData(data);
         return project;
@@ -124,7 +129,7 @@ const DataManager = {
 
     addMeeting(meeting) {
         const data = this.getData();
-        meeting.id = Date.now().toString();
+        meeting.id = this.generateId();
         if (!meeting.attendance) {
             meeting.attendance = [];
         }
@@ -157,7 +162,7 @@ const DataManager = {
 
     addTask(task) {
         const data = this.getData();
-        task.id = Date.now().toString();
+        task.id = this.generateId();
         task.createdAt = new Date().toISOString();
         data.tasks.push(task);
         this.saveData(data);
