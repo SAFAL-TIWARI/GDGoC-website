@@ -37,11 +37,11 @@ const Footer = () => {
     ];
 
     const socialLinks = [
-        { icon: <TbBrandLinkedin />, href: "https://www.linkedin.com/company/gdgoc-sati/", label: "LinkedIn" },
-        { icon: <TbBrandGithub />, href: "https://github.com/GDGoC-SATI", label: "GitHub" },
-        { icon: <TbBrandInstagram />, href: "https://www.instagram.com/gdgoc.sati/", label: "Instagram" },
         { icon: <TbBrandGoogle />, href: "https://gdg.community.dev/gdg-on-campus-samrat-ashok-technological-institute-vidisha-india/", label: "GDG Community" },
+        { icon: <TbBrandLinkedin />, href: "https://www.linkedin.com/company/gdgoc-sati/", label: "LinkedIn" },
+        { icon: <TbBrandInstagram />, href: "https://www.instagram.com/gdgoc.sati/", label: "Instagram" },
         { icon: <TbBrandYoutube />, href: "https://www.youtube.com/@GDGoCSATI", label: "YouTube" },
+        { icon: <TbBrandGithub />, href: "https://github.com/GDGoC-SATI", label: "GitHub" },
     ];
 
     return (
