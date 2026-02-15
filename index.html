@@ -1,189 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDGoC SATI - Google Developer Group on Campus</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gdg-website</title>
 </head>
+<script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <img src="images/gdg-logo.png" alt="GDGoC Logo" class="logo" onerror="this.style.display='none'">
-                <h2>GDGoC SATI</h2>
-            </div>
-            <button class="nav-toggle" id="navToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#members" class="nav-link">Members</a></li>
-                <li><a href="#events" class="nav-link">Events</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#meetings" class="nav-link">Meetings</a></li>
-                <li><a href="#tasks" class="nav-link">Tasks</a></li>
-                <li><a href="admin.html" class="nav-link admin-link">Admin</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Welcome to GDGoC SATI</h1>
-                <p class="hero-subtitle">Google Developer Group on Campus</p>
-                <p class="hero-description">Samrat Ashok Technological Institute, Vidisha</p>
-                <div class="hero-buttons">
-                    <a href="#members" class="btn btn-primary">Join Us</a>
-                    <a href="#events" class="btn btn-secondary">Upcoming Events</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <p>
-                    Google Developer Group on Campus (GDGoC) at Samrat Ashok Technological Institute, Vidisha is a 
-                    student-led community group for students interested in Google developer technologies. 
-                    We host workshops, study jams, hackathons, and other events to help students learn and grow 
-                    their technical skills.
-                </p>
-                <div class="stats">
-                    <div class="stat-card">
-                        <i class="fas fa-users"></i>
-                        <h3 id="memberCount">0</h3>
-                        <p>Members</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-calendar"></i>
-                        <h3 id="eventCount">0</h3>
-                        <p>Events</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-project-diagram"></i>
-                        <h3 id="projectCount">0</h3>
-                        <p>Projects</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Members Section -->
-    <section id="members" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Our Team</h2>
-            <div class="section-controls">
-                <input type="text" id="memberSearch" placeholder="Search members..." class="search-input">
-            </div>
-            <div id="membersGrid" class="members-grid">
-                <!-- Members will be dynamically loaded -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="section">
-        <div class="container">
-            <h2 class="section-title">Events</h2>
-            <div class="section-controls">
-                <select id="eventFilter" class="filter-select">
-                    <option value="all">All Events</option>
-                    <option value="upcoming">Upcoming</option>
-                    <option value="past">Past</option>
-                </select>
-            </div>
-            <div id="eventsGrid" class="events-grid">
-                <!-- Events will be dynamically loaded -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Our Projects</h2>
-            <div id="projectsGrid" class="projects-grid">
-                <!-- Projects will be dynamically loaded -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Meetings Section -->
-    <section id="meetings" class="section">
-        <div class="container">
-            <h2 class="section-title">Meetings</h2>
-            <div id="meetingsContainer" class="meetings-container">
-                <!-- Meetings will be dynamically loaded -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Tasks Section -->
-    <section id="tasks" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Tasks & Work Allotment</h2>
-            <div class="section-controls">
-                <select id="taskFilter" class="filter-select">
-                    <option value="all">All Tasks</option>
-                    <option value="pending">Pending</option>
-                    <option value="in-progress">In Progress</option>
-                    <option value="completed">Completed</option>
-                    <option value="overdue">Overdue</option>
-                </select>
-            </div>
-            <div id="tasksContainer" class="tasks-container">
-                <!-- Tasks will be dynamically loaded -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>GDGoC SATI</h3>
-                    <p>Google Developer Group on Campus<br>
-                    Samrat Ashok Technological Institute<br>
-                    Vidisha, Madhya Pradesh</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#members">Members</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-bottom">&copy; <span id="currentYear"></span> GDGoC SATI. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/data.js"></script>
-    <script src="js/app.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
+
 </html>
