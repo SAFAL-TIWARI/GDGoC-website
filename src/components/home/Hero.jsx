@@ -114,13 +114,15 @@ const Hero = () => {
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                     >
                         <a
-                            href="#join"
+                            href="https://gdg.community.dev/gdg-on-campus-samrat-ashok-technological-institute-vidisha-india/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-8 py-4 rounded-full bg-google-blue text-white font-semibold text-lg hover:bg-blue-600 transition-all shadow-lg hover:shadow-google-blue/30 transform hover:-translate-y-1"
                         >
                             Become a Member
                         </a>
                         <a
-                            href="events"
+                            href="/events"
                             className="px-8 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold text-lg hover:bg-white/20 transition-all transform hover:-translate-y-1"
                         >
                             Explore Events

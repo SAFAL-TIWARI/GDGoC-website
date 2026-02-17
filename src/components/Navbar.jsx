@@ -80,7 +80,7 @@ const Navbar = () => {
                             alt="GDG on Campus"
                             className={`absolute right-10 h-full w-auto object-contain transition-all duration-500 ease-out origin-left ${isScrolled
                                 ? 'opacity-0 scale-90'
-                                : 'opacity-100 scale-200'
+                                : 'opacity-100 scale-200 md:scale-200'
                                 }`}
                         />
 

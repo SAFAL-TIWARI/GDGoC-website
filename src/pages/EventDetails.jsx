@@ -14,7 +14,7 @@ const EventDetails = () => {
 
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pb-20 pt-24">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Back Button */}
                 <Link
@@ -30,19 +30,19 @@ const EventDetails = () => {
                     className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl border border-slate-100 dark:border-slate-800"
                 >
                     {/* Hero Image */}
-                    <div className="relative h-64 md:h-96 w-full overflow-hidden group">
+                    <div className="relative w-full overflow-hidden group">
                         <img
                             src={event.imageUrl}
                             alt={event.title}
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
 
                         <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
-                            <span className="inline-block px-3 py-1 mb-4 rounded-full bg-google-blue/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
+                            <span className="inline-block px-3 py-1 mb-4 rounded-full bg-google-blue/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-sm ">
                                 {event.type}
                             </span>
-                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 leading-tight">
+                            <h1 className="text-1xl md:text-4xl lg:text-5xl font-bold text-white  mb-2 leading-tight ">
                                 {event.title}
                             </h1>
                         </div>

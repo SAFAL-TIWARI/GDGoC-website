@@ -36,12 +36,12 @@ const EventCard = ({ id, title, date, location, description, imageUrl, type, ind
             <Link to={`/events/${id}`} className="block group">
                 <div className="bg-white/80 dark:bg-slate-900/60 backdrop-blur-md rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-700/50 shadow-lg hover:shadow-2xl hover:shadow-google-blue/10 transition-all duration-300 transform group-hover:-translate-y-2">
 
-                    {/* Image Area */}
-                    <div className="relative h-56 overflow-hidden">
+                    {/* Image Area - Made responsive to show full banner */}
+                    <div className="relative w-full overflow-hidden">
                         <img
                             src={imageUrl}
                             alt={title}
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
@@ -124,7 +124,7 @@ const Events = () => {
             />
 
             {/* Header / Hero */}
-            <div className="relative pt-32 pb-20 bg-white dark:bg-slate-900 overflow-hidden">
+            <div className="relative pt-10 pb-10 bg-white dark:bg-slate-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/assets/grid-pattern.svg')] opacity-5" />
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-google-blue/10 to-transparent blur-3xl" />
 
