@@ -85,6 +85,19 @@ The output will be in the `dist/` directory.
 
 ---
 
+## 🌐 Connect With Us
+
+Stay updated with our latest news, events, and announcements through our official channels.
+
+-   **Official Website**: [gdgoc-sati.vercel.app](https://gdgoc-sati.vercel.app)
+-   **Community Platform**: [GDG Community Page](https://gdg.community.dev/gdg-on-campus-samrat-ashok-technological-institute-vidisha-india/)
+-   **LinkedIn**: [GDGoC-SATI on LinkedIn](https://www.linkedin.com/company/gdgoc-sati/)
+-   **Instagram**: [@gdgoc.sati](https://www.instagram.com/gdgoc.sati/)
+-   **YouTube**: [GDGoC-SATI YouTube Channel](https://www.youtube.com/@GDGoCSATI)
+-   **GitHub**: [GDGoC-SATI Organization](https://github.com/GDGoC-SATI)
+
+---
+
 ## 👥 Meet the Team
 
 Our incredible team of designers, developers, and community leads makes everything possible. Check out our [Team Page](https://gdgoc-sati.vercel.app/team) to learn more.
