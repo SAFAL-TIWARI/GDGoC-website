@@ -2,10 +2,6 @@
 
 Welcome to the official repository for the **GDGoC-SATI Website**. This modern, high-performance web application is designed to showcase our community's activities, team members, projects, and events.
 
-## 🚀 Overview
-
-The **GDGoC Website** serves as a central hub for students and developers to connect, learn, and grow. It provides a platform to explore our latest events, meet the team, view our gallery, and collaborate on innovative projects. Built with a focus on **visual excellence** and **smooth user experience**, the site reflects the professional and creative spirit of the Google Developer Groups on Campus.
-
 ---
 
 ## ✨ Features
