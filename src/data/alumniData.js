@@ -92,7 +92,7 @@ export const alumniData = [
     {
         id: 7,
         name: "Monika Basene",
-        role: "GDG Lead '25 | Batch 2026",
+        role: "GDG Lead '25 | Batch 2025",
         era: "The Future Legends",
         bio: "Representing the next generation of leadership, driving the transition to GDG on Campus with a focus on emerging technologies.",
         skills: ["Community Building", "Leadership", "Technology Strategy", "Public Speaking"],
@@ -101,7 +101,7 @@ export const alumniData = [
         linkedin: "https://www.linkedin.com/in/monika-basene/",
         github: null,
         instagram: "https://instagram.com/monika_basene",
-        batch: "2026",
-        org: "GDGoC"
+        batch: "2025",
+        org: "GDSC"
     }
 ];

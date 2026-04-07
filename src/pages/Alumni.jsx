@@ -73,7 +73,7 @@ const LegacyProfileCard = ({ alumni, index }) => {
         </div>
 
         {/* Right Section: Core Info */}
-        <div className="lg:w-3/5 p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+        <div className="lg:w-3/5 p-8 md:p-12 lg:p-16 flex flex-col justify-center relative ">
             <div className="absolute top-12 right-12 text-slate-100 dark:text-white/5 pointer-events-none group-hover:text-google-blue/10 transition-colors hidden md:block">
                 <FaQuoteLeft size={120} />
             </div>
@@ -84,7 +84,7 @@ const LegacyProfileCard = ({ alumni, index }) => {
                 </span>
             </div>
 
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tighter mb-4">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tighter mb-4 z-[10]">
                 {alumni.name}
             </h3>
             
