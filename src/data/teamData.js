@@ -461,7 +461,7 @@ export const teams = {
                 socials: {
                     linkedin: 'https://www.linkedin.com/in/hardik-kumar-sinha/',
                     github: 'https://github.com/hksinha510',
-                    instagram:null 
+                    instagram:'https://www.instagram.com/har.dikks/'
                 },
                 tags: ['Sponsorship', 'PR', 'Negotiation'],
                 team: 'Management'

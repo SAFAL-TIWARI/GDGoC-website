@@ -2,7 +2,7 @@ export const alumniData = [
     {
         id: 1,
         name: "Anamika Jain",
-        role: "Lead GDSC at SATI (2023-24) | Coordinator at GDG Bhopal",
+        role: "Lead GDSC at SATI (2023-24) | Coordinator at GDG Bhopal | CSE Batch 2025",
         era: "The Pioneers",
         bio: "An impactful leader who spearheaded the transition and growth of the community, fostering a culture of innovation and collaboration.",
         skills: ["Community Management", "Leadership", "Public Speaking", "Event Planning"],
@@ -17,7 +17,7 @@ export const alumniData = [
     {
         id: 2,
         name: "Anekant Jain",
-        role: "AI Engineer & MERN Stack Developer | SIH'23 Winner",
+        role: "AI Engineer & MERN Stack Developer | SIH'23 Winner | CSE Batch 2025",
         era: "The Visionaries",
         bio: "A technical powerhouse known for winning SIH'23 and pushing the boundaries of AI integration within the community projects.",
         skills: ["AI Engineering", "MERN Stack", "Intelligent Systems", "Cloud Computing"],
@@ -32,7 +32,7 @@ export const alumniData = [
     {
         id: 3,
         name: "Shakti Chaturvedi",
-        role: "Backend & AI Engineer | AI & Data Science",
+        role: "Backend & AI Engineer | AI & Data Science Batch 2025",
         era: "The Visionaries",
         bio: "Specializing in robust backend architectures and AI-driven solutions, helping scale the community's technical infrastructure.",
         skills: ["Python", "AI Chatbots", "Multi-agent Architectures", "Modern Backend Systems", "MLOps"],
@@ -47,7 +47,7 @@ export const alumniData = [
     {
         id: 4,
         name: "Chehak Sharma",
-        role: "Data Engineering at HCLTech | CSE 2025",
+        role: "Data Engineering at HCLTech | CSE Batch 2025",
         era: "The Visionaries",
         bio: "Hands-on experience in data engineering and full-stack development. Contributing to healthcare data projects through pipeline optimization and SQL efficiency.",
         skills: ["Data Engineering", "Python", "SQL", "MERN Stack", "Cloud Fundamentals"],
@@ -62,7 +62,7 @@ export const alumniData = [
     {
         id: 5,
         name: "Ayush Suryavanshi",
-        role: "SDE at Prevoyance | Batch 2025",
+        role: "SDE at Prevoyance | IOT Batch 2025",
         era: "The Visionaries",
         bio: "An expert in building scalable software solutions and mentored many juniors in mastering the art of clean code and system design.",
         skills: ["Software Engineering", "System Design", "Node.js", "Scalability", "Agile Methodologies"],
@@ -77,15 +77,15 @@ export const alumniData = [
     {
         id: 6,
         name: "Rajvardhan Singh Gangwar",
-        role: "Google Cloud Facilitator | SIH'23 Winner",
+        role: "Google Cloud Facilitator | SIH'23 Winner | CSE(BC) Batch 2025",
         era: "The Visionaries",
         bio: "A cloud enthusiast who empowered the community with GCP knowledge and lead teams to victory in national competitions like SIH'23.",
-        skills: ["Google Cloud", "Leadership", "DevOps", "Infrastructure as Code", "Python"],
+        skills: ["Google Cloud", "Leadership", "Infrastructure as Code", "Python", "Android", "MERN", "Flutter"],
         image: "/assets/core team/profile/rajvardhan.jpeg",
         color: "#EA4335",
         linkedin: "https://www.linkedin.com/in/rajvardhan-singh-gangwar/",
-        github: null,
-        instagram: null,
+        github: "https://github.com/invictus04",
+        instagram: "https://www.instagram.com/yeah.itz_raj?igsh=ZjRoZmZlc3lzeTRz",
         batch: "2025",
         org: "GDSC"
     },
